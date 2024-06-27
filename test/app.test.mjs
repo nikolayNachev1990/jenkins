@@ -6,8 +6,22 @@ const expect = chai.expect;
 chai.use(chaiHttp);
 
 describe('GET /', () => {
+  let server;
+
+  before((done) => {
+    server = app.listen(3000, () => {
+      done();
+    });
+  });
+
+  after((done) => {
+    server.close(() => {
+      done();
+    });
+  });
+
   it('should return Hello World', (done) => {
-    chai.request(app)
+    chai.request(server)
       .get('/')
       .end((err, res) => {
         expect(res).to.have.status(200);
