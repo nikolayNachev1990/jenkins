@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'NodeJS 14.x' // Името на Node.js инсталацията
+        nodejs 'NodeJS 20' // Името на Node.js инсталацията
     }
 
     stages {
