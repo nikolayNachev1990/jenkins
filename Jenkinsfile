@@ -1,10 +1,14 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'NodeJS 14.x' // Името на Node.js инсталацията
+    }
+
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/nikolayNachev1990/jenkins.git'
+                git branch: 'main', url: 'https://github.com/nikolayNachev1990/jenkins.git', credentialsId: 'f5365260-2355-4a6c-9532-a2f3ae632d5f'
             }
         }
 
