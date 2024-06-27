@@ -25,7 +25,7 @@ describe('GET /', () => {
       .get('/')
       .end((err, res) => {
         expect(res).to.have.status(200);
-        expect(res.text).to.equal('Hello World 2024!');
+        expect(res.text).to.equal('Hello World 20242!');
         done();
       });
   });
