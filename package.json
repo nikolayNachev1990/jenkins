@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node src/app.mjs",
-    "test": "mocha --require @babel/register",
+    "test": "mocha --require @babel/register --reporter mocha-junit-reporter --reporter-options mochaFile=./test-results.xml",
     "build": "echo 'No build step defined.'"
   },
   "keywords": [],
