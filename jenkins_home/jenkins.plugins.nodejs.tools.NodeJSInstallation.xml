@@ -8,7 +8,7 @@
           <installers>
             <jenkins.plugins.nodejs.tools.NodeJSInstaller>
               <id>20.14.0</id>
-              <npmPackagesRefreshHours>72</npmPackagesRefreshHours>
+              <npmPackagesRefreshHours>0</npmPackagesRefreshHours>
               <force32Bit>false</force32Bit>
             </jenkins.plugins.nodejs.tools.NodeJSInstaller>
           </installers>
