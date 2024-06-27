@@ -1,9 +1,9 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs 'NodeJS 20' // Името на Node.js инсталацията
-    }
+    // tools {
+    //     nodejs "NodeJS 20" // Името на Node.js инсталацията
+    // }
 
     stages {
         stage('Checkout') {
